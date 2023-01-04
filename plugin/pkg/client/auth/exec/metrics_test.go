@@ -23,9 +23,9 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"k8s.io/client-go/pkg/apis/clientauthentication"
-	"k8s.io/client-go/tools/clientcmd/api"
-	"k8s.io/client-go/tools/metrics"
+	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
+	"github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd/api"
+	"github.com/spotmaxtech/k8s-client-go-v02217/tools/metrics"
 )
 
 type mockExpiryGauge struct {

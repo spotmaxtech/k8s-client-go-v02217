@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/spotmaxtech/k8s-client-go-v02217/util/workqueue"
 	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/client-go/util/workqueue"
 )
 
 func TestBasic(t *testing.T) {

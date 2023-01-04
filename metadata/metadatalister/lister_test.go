@@ -20,12 +20,12 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/client-go/tools/cache"
 )
 
 func TestNamespaceGetMethod(t *testing.T) {

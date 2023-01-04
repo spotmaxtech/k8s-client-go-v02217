@@ -22,6 +22,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
+	restclientwatch "github.com/spotmaxtech/k8s-client-go-v02217/rest/watch"
 	"k8s.io/api/core/v1"
 	apiequality "k8s.io/apimachinery/pkg/api/equality"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -30,8 +32,6 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/serializer/streaming"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/apimachinery/pkg/watch"
-	"k8s.io/client-go/kubernetes/scheme"
-	restclientwatch "k8s.io/client-go/rest/watch"
 )
 
 // getDecoder mimics how k8s.io/client-go/rest.createSerializers creates a decoder

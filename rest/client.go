@@ -24,10 +24,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/spotmaxtech/k8s-client-go-v02217/util/flowcontrol"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/client-go/util/flowcontrol"
 )
 
 const (
@@ -52,7 +52,8 @@ type Interface interface {
 // ClientContentConfig controls how RESTClient communicates with the server.
 //
 // TODO: ContentConfig will be updated to accept a Negotiator instead of a
-//   NegotiatedSerializer and NegotiatedSerializer will be removed.
+//
+//	NegotiatedSerializer and NegotiatedSerializer will be removed.
 type ClientContentConfig struct {
 	// AcceptContentTypes specifies the types the client will accept and is optional.
 	// If not set, ContentType will be used to define the Accept header
@@ -159,13 +160,14 @@ func readExpBackoffConfig() BackoffManager {
 // c, err := NewRESTClient(...)
 // if err != nil { ... }
 // resp, err := c.Verb("GET").
-//  Path("pods").
-//  SelectorParam("labels", "area=staging").
-//  Timeout(10*time.Second).
-//  Do()
+//
+//	Path("pods").
+//	SelectorParam("labels", "area=staging").
+//	Timeout(10*time.Second).
+//	Do()
+//
 // if err != nil { ... }
 // list, ok := resp.(*api.PodList)
-//
 func (c *RESTClient) Verb(verb string) *Request {
 	return NewRequest(c).Verb(verb)
 }

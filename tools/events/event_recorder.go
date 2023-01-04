@@ -20,6 +20,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/spotmaxtech/k8s-client-go-v02217/tools/record/util"
+	"github.com/spotmaxtech/k8s-client-go-v02217/tools/reference"
 	v1 "k8s.io/api/core/v1"
 	eventsv1 "k8s.io/api/events/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -27,8 +29,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/clock"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/watch"
-	"k8s.io/client-go/tools/record/util"
-	"k8s.io/client-go/tools/reference"
 	"k8s.io/klog/v2"
 )
 

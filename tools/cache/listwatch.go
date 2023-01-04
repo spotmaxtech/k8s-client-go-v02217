@@ -19,11 +19,11 @@ package cache
 import (
 	"context"
 
+	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/fields"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
-	restclient "k8s.io/client-go/rest"
 )
 
 // Lister is any object that knows how to perform an initial list.

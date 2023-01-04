@@ -19,6 +19,7 @@ package remotecommand
 import (
 	"encoding/json"
 	"errors"
+	"github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	"io"
 	"io/ioutil"
 	v1 "k8s.io/api/core/v1"
@@ -28,7 +29,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/httpstream/spdy"
 	remotecommandconsts "k8s.io/apimachinery/pkg/util/remotecommand"
 	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/client-go/rest"
 	"net/http"
 	"net/http/httptest"
 	"net/url"

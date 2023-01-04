@@ -31,9 +31,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/version"
-	"k8s.io/client-go/discovery"
-	"k8s.io/client-go/kubernetes/scheme"
-	restclient "k8s.io/client-go/rest"
+	"github.com/spotmaxtech/k8s-client-go-v02217/discovery"
+	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
+	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 )
 
 // CachedDiscoveryClient implements the functions that discovery server-supported API groups,

@@ -20,8 +20,8 @@ package v1beta1
 
 import (
 	v1beta1 "k8s.io/api/storage/v1beta1"
-	"k8s.io/client-go/kubernetes/scheme"
-	rest "k8s.io/client-go/rest"
+	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
+	rest "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 )
 
 type StorageV1beta1Interface interface {

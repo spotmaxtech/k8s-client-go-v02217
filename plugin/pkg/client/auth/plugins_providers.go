@@ -1,3 +1,4 @@
+//go:build !providerless
 // +build !providerless
 
 /*
@@ -20,7 +21,7 @@ package auth
 
 import (
 	// Initialize client auth plugins for cloud providers.
-	_ "k8s.io/client-go/plugin/pkg/client/auth/azure"
-	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
-	_ "k8s.io/client-go/plugin/pkg/client/auth/openstack"
+	_ "github.com/spotmaxtech/k8s-client-go-v02217/plugin/pkg/client/auth/azure"
+	_ "github.com/spotmaxtech/k8s-client-go-v02217/plugin/pkg/client/auth/gcp"
+	_ "github.com/spotmaxtech/k8s-client-go-v02217/plugin/pkg/client/auth/openstack"
 )

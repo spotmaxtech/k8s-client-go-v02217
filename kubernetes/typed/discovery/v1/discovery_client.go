@@ -20,8 +20,8 @@ package v1
 
 import (
 	v1 "k8s.io/api/discovery/v1"
-	"k8s.io/client-go/kubernetes/scheme"
-	rest "k8s.io/client-go/rest"
+	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
+	rest "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 )
 
 type DiscoveryV1Interface interface {

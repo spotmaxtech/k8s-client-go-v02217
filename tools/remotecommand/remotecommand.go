@@ -24,10 +24,10 @@ import (
 
 	"k8s.io/klog/v2"
 
+	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
+	spdy "github.com/spotmaxtech/k8s-client-go-v02217/transport/spdy"
 	"k8s.io/apimachinery/pkg/util/httpstream"
 	"k8s.io/apimachinery/pkg/util/remotecommand"
-	restclient "k8s.io/client-go/rest"
-	spdy "k8s.io/client-go/transport/spdy"
 )
 
 // StreamOptions holds information pertaining to the current streaming session:

@@ -21,9 +21,9 @@ import (
 	"errors"
 	"net/http"
 
-	"k8s.io/client-go/pkg/apis/clientauthentication"
-	"k8s.io/client-go/plugin/pkg/client/auth/exec"
-	"k8s.io/client-go/transport"
+	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
+	"github.com/spotmaxtech/k8s-client-go-v02217/plugin/pkg/client/auth/exec"
+	"github.com/spotmaxtech/k8s-client-go-v02217/transport"
 )
 
 // TLSConfigFor returns a tls.Config that will provide the transport level security defined

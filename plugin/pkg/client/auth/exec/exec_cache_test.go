@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
+	clientset "github.com/spotmaxtech/k8s-client-go-v02217/kubernetes"
+	"github.com/spotmaxtech/k8s-client-go-v02217/rest"
+	clientcmdapi "github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd/api"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	utilnet "k8s.io/apimachinery/pkg/util/net"
-	clientset "k8s.io/client-go/kubernetes"
-	"k8s.io/client-go/rest"
-	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
 )
 
 // TestExecTLSCache asserts the semantics of the TLS cache when exec auth is used.

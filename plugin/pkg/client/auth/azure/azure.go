@@ -30,8 +30,8 @@ import (
 	"github.com/Azure/go-autorest/autorest/azure"
 	"k8s.io/klog/v2"
 
+	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	"k8s.io/apimachinery/pkg/util/net"
-	restclient "k8s.io/client-go/rest"
 )
 
 type configMode int

@@ -30,7 +30,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/clock"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/util/strategicpatch"
-	"k8s.io/client-go/util/flowcontrol"
+	"github.com/spotmaxtech/k8s-client-go-v02217/util/flowcontrol"
 )
 
 const (

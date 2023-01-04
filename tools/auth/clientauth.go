@@ -45,20 +45,20 @@ client.Client from an authcfg.Info.
 
 Example:
 
-    import (
-        "pkg/client"
-        "pkg/client/auth"
-    )
+	import (
+	    "pkg/client"
+	    "pkg/client/auth"
+	)
 
-    info, err := auth.LoadFromFile(filename)
-    if err != nil {
-      // handle error
-    }
-    clientConfig = client.Config{}
-    clientConfig.Host = "example.com:4901"
-    clientConfig = info.MergeWithConfig()
-    client := client.New(clientConfig)
-    client.Pods(ns).List()
+	info, err := auth.LoadFromFile(filename)
+	if err != nil {
+	  // handle error
+	}
+	clientConfig = client.Config{}
+	clientConfig.Host = "example.com:4901"
+	clientConfig = info.MergeWithConfig()
+	client := client.New(clientConfig)
+	client.Pods(ns).List()
 */
 package auth
 
@@ -68,7 +68,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	restclient "k8s.io/client-go/rest"
+	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 )
 
 // Info holds Kubernetes API authorization config.  It is intended

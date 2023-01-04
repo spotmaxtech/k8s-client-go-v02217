@@ -39,6 +39,10 @@ import (
 
 	"k8s.io/klog/v2"
 
+	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
+	restclientwatch "github.com/spotmaxtech/k8s-client-go-v02217/rest/watch"
+	"github.com/spotmaxtech/k8s-client-go-v02217/util/flowcontrol"
+	utiltesting "github.com/spotmaxtech/k8s-client-go-v02217/util/testing"
 	v1 "k8s.io/api/core/v1"
 	apiequality "k8s.io/apimachinery/pkg/api/equality"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
@@ -51,10 +55,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/httpstream"
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/apimachinery/pkg/watch"
-	"k8s.io/client-go/kubernetes/scheme"
-	restclientwatch "k8s.io/client-go/rest/watch"
-	"k8s.io/client-go/util/flowcontrol"
-	utiltesting "k8s.io/client-go/util/testing"
 )
 
 func TestNewRequestSetsAccept(t *testing.T) {

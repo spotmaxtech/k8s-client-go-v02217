@@ -21,8 +21,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"k8s.io/client-go/pkg/apis/clientauthentication"
-	clientauthenticationapi "k8s.io/client-go/pkg/apis/clientauthentication"
+	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
+	clientauthenticationapi "github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
 )
 
 // This file contains Config logic related to exec credential plugins.
