@@ -19,10 +19,10 @@ package scale
 import (
 	"context"
 
-	autoscalingapi "k8s.io/api/autoscaling/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/types"
+	autoscalingapi "github.com/spotmaxtech/k8s-api-v02217/autoscaling/v1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
 )
 
 // ScalesGetter can produce a ScaleInterface

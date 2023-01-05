@@ -19,10 +19,10 @@ package discovery
 import (
 	"fmt"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/sets"
-	apimachineryversion "k8s.io/apimachinery/pkg/version"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
+	apimachineryversion "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/version"
 )
 
 // MatchesServerVersion queries the server to compares the build version

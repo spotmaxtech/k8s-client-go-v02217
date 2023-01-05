@@ -19,12 +19,12 @@ package events
 import (
 	"fmt"
 
-	corev1 "k8s.io/api/core/v1"
-	eventsv1 "k8s.io/api/events/v1"
-	eventsv1beta1 "k8s.io/api/events/v1beta1"
-	"k8s.io/apimachinery/pkg/fields"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/types"
+	corev1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	eventsv1 "github.com/spotmaxtech/k8s-api-v02217/events/v1"
+	eventsv1beta1 "github.com/spotmaxtech/k8s-api-v02217/events/v1beta1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/fields"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
 )
 
 var mapping = map[schema.GroupVersion]string{

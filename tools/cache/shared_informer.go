@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"k8s.io/apimachinery/pkg/api/meta"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/clock"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/apimachinery/pkg/util/wait"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/meta"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	utilruntime "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/wait"
 	"k8s.io/utils/buffer"
 
 	"k8s.io/klog/v2"

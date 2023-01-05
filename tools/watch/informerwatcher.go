@@ -19,9 +19,9 @@ package watch
 import (
 	"sync"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/watch"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/watch"
 )
 
 func newEventProcessor(out chan<- watch.Event) *eventProcessor {

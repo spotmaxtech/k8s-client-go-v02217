@@ -17,9 +17,9 @@ limitations under the License.
 package fake
 
 import (
+	v1beta1 "github.com/spotmaxtech/k8s-api-v02217/events/v1beta1"
+	types "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
 	core "github.com/spotmaxtech/k8s-client-go-v02217/testing"
-	v1beta1 "k8s.io/api/events/v1beta1"
-	types "k8s.io/apimachinery/pkg/types"
 )
 
 // CreateWithEventNamespace creats a new event. Returns the copy of the event the server returns, or an error.

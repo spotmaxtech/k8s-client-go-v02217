@@ -23,14 +23,14 @@ import (
 	"net/http"
 	"strings"
 
+	v1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	policyv1 "github.com/spotmaxtech/k8s-api-v02217/policy/v1"
+	policyv1beta1 "github.com/spotmaxtech/k8s-api-v02217/policy/v1beta1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	fakerest "github.com/spotmaxtech/k8s-client-go-v02217/rest/fake"
 	core "github.com/spotmaxtech/k8s-client-go-v02217/testing"
-	v1 "k8s.io/api/core/v1"
-	policyv1 "k8s.io/api/policy/v1"
-	policyv1beta1 "k8s.io/api/policy/v1beta1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 func (c *FakePods) Bind(ctx context.Context, binding *v1.Binding, opts metav1.CreateOptions) error {

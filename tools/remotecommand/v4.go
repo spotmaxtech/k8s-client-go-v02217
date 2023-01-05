@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"sync"
 
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/remotecommand"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/exec"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/remotecommand"
 )
 
 // streamProtocolV4 implements version 4 of the streaming protocol for attach

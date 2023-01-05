@@ -26,16 +26,16 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
+	corev1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	apierrors "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/diff"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/watch"
 	fakeclientset "github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/fake"
 	testcore "github.com/spotmaxtech/k8s-client-go-v02217/testing"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
-	corev1 "k8s.io/api/core/v1"
-	apierrors "k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/apimachinery/pkg/watch"
 )
 
 // TestEventProcessorExit is expected to timeout if the event processor fails

@@ -19,9 +19,9 @@ limitations under the License.
 package v1
 
 import (
-	v1 "k8s.io/api/apps/v1"
-	corev1 "k8s.io/api/core/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	v1 "github.com/spotmaxtech/k8s-api-v02217/apps/v1"
+	corev1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
 )
 
 // DaemonSetConditionApplyConfiguration represents an declarative configuration of the DaemonSetCondition type for use

@@ -19,9 +19,9 @@ package fake
 import (
 	"context"
 
+	policy "github.com/spotmaxtech/k8s-api-v02217/policy/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 	core "github.com/spotmaxtech/k8s-client-go-v02217/testing"
-	policy "k8s.io/api/policy/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
 func (c *FakeEvictions) Evict(ctx context.Context, eviction *policy.Eviction) error {

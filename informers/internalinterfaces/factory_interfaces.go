@@ -21,8 +21,8 @@ package internalinterfaces
 import (
 	time "time"
 
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	runtime "k8s.io/apimachinery/pkg/runtime"
+	v1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	runtime "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
 	kubernetes "github.com/spotmaxtech/k8s-client-go-v02217/kubernetes"
 	cache "github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
 )

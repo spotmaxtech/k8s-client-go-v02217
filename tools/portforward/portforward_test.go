@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/httpstream"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/httpstream"
 )
 
 type fakeDialer struct {

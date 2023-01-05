@@ -28,9 +28,9 @@ import (
 	openapi_v2 "github.com/googleapis/gnostic/openapiv2"
 	"k8s.io/klog/v2"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/version"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/version"
 	"github.com/spotmaxtech/k8s-client-go-v02217/discovery"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"

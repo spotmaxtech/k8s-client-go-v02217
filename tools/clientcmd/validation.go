@@ -23,9 +23,9 @@ import (
 	"reflect"
 	"strings"
 
+	utilerrors "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/errors"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/validation"
 	clientcmdapi "github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd/api"
-	utilerrors "k8s.io/apimachinery/pkg/util/errors"
-	"k8s.io/apimachinery/pkg/util/validation"
 )
 
 var (

@@ -19,10 +19,10 @@ package v1beta1
 import (
 	"fmt"
 
-	"k8s.io/api/core/v1"
-	policy "k8s.io/api/policy/v1beta1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/labels"
+	"github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	policy "github.com/spotmaxtech/k8s-api-v02217/policy/v1beta1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/labels"
 	"k8s.io/klog/v2"
 )
 

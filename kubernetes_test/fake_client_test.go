@@ -20,10 +20,10 @@ import (
 	"context"
 	"testing"
 
-	corev1 "k8s.io/api/core/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
+	corev1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/fake"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
 )

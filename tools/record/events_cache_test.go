@@ -23,10 +23,10 @@ import (
 	"testing"
 	"time"
 
-	v1 "k8s.io/api/core/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/clock"
-	"k8s.io/apimachinery/pkg/util/diff"
+	v1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/diff"
 )
 
 func makeObjectReference(kind, name, namespace string) v1.ObjectReference {

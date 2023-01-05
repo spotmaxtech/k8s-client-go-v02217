@@ -17,10 +17,10 @@ limitations under the License.
 package extensionsint
 
 import (
+	extensionsv1beta1 "github.com/spotmaxtech/k8s-api-v02217/extensions/v1beta1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 	scalescheme "github.com/spotmaxtech/k8s-client-go-v02217/scale/scheme"
-	extensionsv1beta1 "k8s.io/api/extensions/v1beta1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
 // GroupName is the group name use in this package

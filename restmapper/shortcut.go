@@ -21,10 +21,10 @@ import (
 
 	"k8s.io/klog/v2"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/meta"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 	"github.com/spotmaxtech/k8s-client-go-v02217/discovery"
-	"k8s.io/apimachinery/pkg/api/meta"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
 // shortcutExpander is a RESTMapper that can be used for Kubernetes resources.   It expands the resource first, then invokes the wrapped

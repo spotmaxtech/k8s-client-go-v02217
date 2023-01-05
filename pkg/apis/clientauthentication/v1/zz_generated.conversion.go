@@ -23,9 +23,9 @@ package v1
 import (
 	unsafe "unsafe"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	conversion "k8s.io/apimachinery/pkg/conversion"
-	runtime "k8s.io/apimachinery/pkg/runtime"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	conversion "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/conversion"
+	runtime "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
 	clientauthentication "github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
 )
 

@@ -17,9 +17,9 @@ limitations under the License.
 package events
 
 import (
+	eventsv1 "github.com/spotmaxtech/k8s-api-v02217/events/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/record"
-	eventsv1 "k8s.io/api/events/v1"
-	"k8s.io/apimachinery/pkg/runtime"
 )
 
 // EventRecorder knows how to record events on behalf of an EventSource.

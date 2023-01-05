@@ -30,14 +30,14 @@ import (
 	"strings"
 	"time"
 
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/version"
 	clientcmdapi "github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd/api"
 	"github.com/spotmaxtech/k8s-client-go-v02217/transport"
 	certutil "github.com/spotmaxtech/k8s-client-go-v02217/util/cert"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/flowcontrol"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/klog/v2"
 )
 

@@ -21,8 +21,8 @@ package v1
 import (
 	"context"
 
-	v1 "k8s.io/api/authentication/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	v1 "github.com/spotmaxtech/k8s-api-v02217/authentication/v1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
 	scheme "github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
 	rest "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 )

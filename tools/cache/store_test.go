@@ -20,7 +20,7 @@ import (
 	"errors"
 	"testing"
 
-	"k8s.io/apimachinery/pkg/util/sets"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
 )
 
 // Test public interface

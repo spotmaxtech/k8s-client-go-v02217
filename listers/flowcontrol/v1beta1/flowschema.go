@@ -19,9 +19,9 @@ limitations under the License.
 package v1beta1
 
 import (
-	v1beta1 "k8s.io/api/flowcontrol/v1beta1"
-	"k8s.io/apimachinery/pkg/api/errors"
-	"k8s.io/apimachinery/pkg/labels"
+	v1beta1 "github.com/spotmaxtech/k8s-api-v02217/flowcontrol/v1beta1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/labels"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
 )
 

@@ -23,8 +23,8 @@ import (
 	"sync"
 	"testing"
 
-	errorsutil "k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	errorsutil "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
 	"github.com/spotmaxtech/k8s-client-go-v02217/discovery/fake"
 )
 

@@ -22,11 +22,11 @@ import (
 	"net/http"
 	"net/url"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/flowcontrol"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/types"
 )
 
 // CreateHTTPClient creates an http.Client that will invoke the provided roundTripper func

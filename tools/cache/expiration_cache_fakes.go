@@ -17,8 +17,8 @@ limitations under the License.
 package cache
 
 import (
-	"k8s.io/apimachinery/pkg/util/clock"
-	"k8s.io/apimachinery/pkg/util/sets"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
 )
 
 type fakeThreadSafeMap struct {
@@ -49,9 +49,9 @@ func (p *FakeExpirationPolicy) IsExpired(obj *TimestampedEntry) bool {
 func NewFakeExpirationStore(keyFunc KeyFunc, deletedKeys chan<- string, expirationPolicy ExpirationPolicy, cacheClock clock.Clock) Store {
 	cacheStorage := NewThreadSafeStore(Indexers{}, Indices{})
 	return &ExpirationCache{
-		cacheStorage:     &fakeThreadSafeMap{cacheStorage, deletedKeys},
-		keyFunc:          keyFunc,
-		clock:            cacheClock,
+		cacheStorage: &fakeThreadSafeMap{cacheStorage, deletedKeys},
+		keyFunc:      keyFunc,
+		clock:        cacheClock,
 		expirationPolicy: expirationPolicy,
 	}
 }

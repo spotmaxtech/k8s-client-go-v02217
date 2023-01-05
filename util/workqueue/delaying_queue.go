@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/clock"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	utilruntime "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/runtime"
 )
 
 // DelayingInterface is an Interface that can Add an item at a later time. This makes it easier to

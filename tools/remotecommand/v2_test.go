@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/util/httpstream"
-	"k8s.io/apimachinery/pkg/util/wait"
+	"github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/httpstream"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/wait"
 )
 
 type fakeReader struct {

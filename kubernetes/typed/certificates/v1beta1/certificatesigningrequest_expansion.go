@@ -19,9 +19,9 @@ package v1beta1
 import (
 	"context"
 
+	certificates "github.com/spotmaxtech/k8s-api-v02217/certificates/v1beta1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
 	scheme "github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
-	certificates "k8s.io/api/certificates/v1beta1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 type CertificateSigningRequestExpansion interface {

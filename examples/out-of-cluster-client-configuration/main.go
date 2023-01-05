@@ -24,8 +24,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/homedir"

@@ -21,12 +21,12 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
 	clientauthenticationv1 "github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication/v1"
 	clientauthenticationv1alpha1 "github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication/v1alpha1"
 	clientauthenticationv1beta1 "github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication/v1beta1"
 	clientcmdv1 "github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd/api/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/sets"
 )
 
 func TestClientAuthenticationClusterTypesAreSynced(t *testing.T) {

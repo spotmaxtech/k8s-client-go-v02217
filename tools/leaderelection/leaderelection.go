@@ -59,12 +59,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/wait"
 	rl "github.com/spotmaxtech/k8s-client-go-v02217/tools/leaderelection/resourcelock"
-	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/clock"
-	"k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/apimachinery/pkg/util/wait"
 
 	"k8s.io/klog/v2"
 )

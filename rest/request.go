@@ -33,18 +33,18 @@ import (
 	"sync"
 	"time"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/serializer/streaming"
+	utilclock "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/net"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/watch"
 	restclientwatch "github.com/spotmaxtech/k8s-client-go-v02217/rest/watch"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/metrics"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/flowcontrol"
 	"golang.org/x/net/http2"
-	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer/streaming"
-	utilclock "k8s.io/apimachinery/pkg/util/clock"
-	"k8s.io/apimachinery/pkg/util/net"
-	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/klog/v2"
 )
 
@@ -1211,13 +1211,13 @@ const maxUnstructuredResponseTextBytes = 2048
 // 1. Assume the server sends you something sane - JSON + well defined error objects + proper codes
 //   - this is the happy path
 //   - when you get this output, trust what the server sends
-//  2. Guard against empty fields / bodies in received JSON and attempt to cull sufficient info from them to
+//     2. Guard against empty fields / bodies in received JSON and attempt to cull sufficient info from them to
 //     generate a reasonable facsimile of the original failure.
-//     - Be sure to use a distinct error type or flag that allows a client to distinguish between this and error 1 above
-//  3. Handle true disconnect failures / completely malformed data by moving up to a more generic client error
-//  4. Distinguish between various connection failures like SSL certificates, timeouts, proxy errors, unexpected
+//   - Be sure to use a distinct error type or flag that allows a client to distinguish between this and error 1 above
+//     3. Handle true disconnect failures / completely malformed data by moving up to a more generic client error
+//     4. Distinguish between various connection failures like SSL certificates, timeouts, proxy errors, unexpected
 //     initial contact, the presence of mismatched body contents from posted content types
-//     - Give these a separate distinct error type and capture as much as possible of the original message
+//   - Give these a separate distinct error type and capture as much as possible of the original message
 //
 // TODO: introduce transformation of generic http.Client.Do() errors that separates 4.
 func (r *Request) transformUnstructuredResponseError(resp *http.Response, req *http.Request, body []byte) error {

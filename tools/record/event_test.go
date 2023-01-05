@@ -25,15 +25,15 @@ import (
 	"testing"
 	"time"
 
+	v1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	k8sruntime "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/strategicpatch"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	ref "github.com/spotmaxtech/k8s-client-go-v02217/tools/reference"
-	v1 "k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	k8sruntime "k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/clock"
-	"k8s.io/apimachinery/pkg/util/strategicpatch"
 )
 
 type testEventSink struct {

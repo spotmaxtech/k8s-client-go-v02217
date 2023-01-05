@@ -25,11 +25,11 @@ import (
 
 	"github.com/golang/groupcache/lru"
 
-	v1 "k8s.io/api/core/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/clock"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apimachinery/pkg/util/strategicpatch"
+	v1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/strategicpatch"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/flowcontrol"
 )
 
@@ -228,10 +228,10 @@ type aggregateRecord struct {
 // EventAggregate checks if a similar event has been seen according to the
 // aggregation configuration (max events, max interval, etc) and returns:
 //
-// - The (potentially modified) event that should be created
-// - The cache key for the event, for correlation purposes. This will be set to
-//   the full key for normal events, and to the result of
-//   EventAggregatorMessageFunc for aggregate events.
+//   - The (potentially modified) event that should be created
+//   - The cache key for the event, for correlation purposes. This will be set to
+//     the full key for normal events, and to the result of
+//     EventAggregatorMessageFunc for aggregate events.
 func (e *EventAggregator) EventAggregate(newEvent *v1.Event) (*v1.Event, string) {
 	now := metav1.NewTime(e.clock.Now())
 	var record aggregateRecord
@@ -420,14 +420,14 @@ type EventCorrelateResult struct {
 // prior to interacting with the API server to record the event.
 //
 // The default behavior is as follows:
-//   * Aggregation is performed if a similar event is recorded 10 times
+//   - Aggregation is performed if a similar event is recorded 10 times
 //     in a 10 minute rolling interval.  A similar event is an event that varies only by
 //     the Event.Message field.  Rather than recording the precise event, aggregation
 //     will create a new event whose message reports that it has combined events with
 //     the same reason.
-//   * Events are incrementally counted if the exact same event is encountered multiple
+//   - Events are incrementally counted if the exact same event is encountered multiple
 //     times.
-//   * A source may burst 25 events about an object, but has a refill rate budget
+//   - A source may burst 25 events about an object, but has a refill rate budget
 //     per object of 1 event every 5 minutes to control long-tail of spam.
 func NewEventCorrelator(clock clock.Clock) *EventCorrelator {
 	cacheSize := maxLruCacheEntries

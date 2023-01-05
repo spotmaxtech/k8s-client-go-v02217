@@ -19,8 +19,8 @@ limitations under the License.
 package v1beta1
 
 import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	types "k8s.io/apimachinery/pkg/types"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	types "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
 	batchv1 "github.com/spotmaxtech/k8s-client-go-v02217/applyconfigurations/batch/v1"
 	v1 "github.com/spotmaxtech/k8s-client-go-v02217/applyconfigurations/meta/v1"
 )

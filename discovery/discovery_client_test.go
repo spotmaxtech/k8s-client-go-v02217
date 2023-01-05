@@ -28,14 +28,14 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 	openapi_v2 "github.com/googleapis/gnostic/openapiv2"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/diff"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/version"
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	"github.com/stretchr/testify/assert"
 	golangproto "google.golang.org/protobuf/proto"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apimachinery/pkg/version"
 )
 
 func TestGetServerVersion(t *testing.T) {

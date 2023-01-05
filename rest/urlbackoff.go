@@ -20,8 +20,8 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/flowcontrol"
-	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/klog/v2"
 )
 

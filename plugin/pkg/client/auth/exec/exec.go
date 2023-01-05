@@ -35,6 +35,11 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"golang.org/x/term"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/serializer"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	utilnet "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/net"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication/install"
 	clientauthenticationv1 "github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication/v1"
@@ -44,11 +49,6 @@ import (
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/metrics"
 	"github.com/spotmaxtech/k8s-client-go-v02217/transport"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/connrotation"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer"
-	"k8s.io/apimachinery/pkg/util/clock"
-	utilnet "k8s.io/apimachinery/pkg/util/net"
 	"k8s.io/klog/v2"
 )
 

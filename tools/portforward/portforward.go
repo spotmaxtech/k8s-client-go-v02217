@@ -28,9 +28,9 @@ import (
 	"strings"
 	"sync"
 
-	"k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/util/httpstream"
-	"k8s.io/apimachinery/pkg/util/runtime"
+	"github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/httpstream"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/runtime"
 )
 
 // PortForwardProtocolV1Name is the subprotocol used for port forwarding.
@@ -61,18 +61,18 @@ type ForwardedPort struct {
 }
 
 /*
-	valid port specifications:
+valid port specifications:
 
-	5000
-	- forwards from localhost:5000 to pod:5000
+5000
+- forwards from localhost:5000 to pod:5000
 
-	8888:5000
-	- forwards from localhost:8888 to pod:5000
+8888:5000
+- forwards from localhost:8888 to pod:5000
 
-	0:5000
-	:5000
-	- selects a random available local port,
-	  forwards from localhost:<random port> to pod:5000
+0:5000
+:5000
+  - selects a random available local port,
+    forwards from localhost:<random port> to pod:5000
 */
 func parsePorts(ports []string) ([]ForwardedPort, error) {
 	var forwards []ForwardedPort

@@ -23,13 +23,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/meta"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/wait"
 	fcache "github.com/spotmaxtech/k8s-client-go-v02217/tools/cache/testing"
-	"k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/api/meta"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/clock"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apimachinery/pkg/util/wait"
 )
 
 type testListener struct {

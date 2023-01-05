@@ -24,7 +24,7 @@ import (
 
 	"golang.org/x/oauth2"
 
-	utilnet "k8s.io/apimachinery/pkg/util/net"
+	utilnet "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/net"
 	"k8s.io/klog/v2"
 )
 

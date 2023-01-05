@@ -17,10 +17,10 @@ limitations under the License.
 package appsint
 
 import (
+	appsv1beta2 "github.com/spotmaxtech/k8s-api-v02217/apps/v1beta2"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 	scalescheme "github.com/spotmaxtech/k8s-client-go-v02217/scale/scheme"
-	appsv1beta2 "k8s.io/api/apps/v1beta2"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
 // GroupName is the group name use in this package

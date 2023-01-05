@@ -19,9 +19,9 @@ limitations under the License.
 package v2beta1
 
 import (
-	v2beta1 "k8s.io/api/autoscaling/v2beta1"
-	"k8s.io/apimachinery/pkg/api/errors"
-	"k8s.io/apimachinery/pkg/labels"
+	v2beta1 "github.com/spotmaxtech/k8s-api-v02217/autoscaling/v2beta1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/labels"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
 )
 

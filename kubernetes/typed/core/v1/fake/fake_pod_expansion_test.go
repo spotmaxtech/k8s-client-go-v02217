@@ -23,7 +23,7 @@ import (
 	"testing"
 
 	cgtesting "github.com/spotmaxtech/k8s-client-go-v02217/testing"
-	corev1 "k8s.io/api/core/v1"
+	corev1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
 )
 
 func TestFakePodsGetLogs(t *testing.T) {

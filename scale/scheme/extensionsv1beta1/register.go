@@ -17,8 +17,8 @@ limitations under the License.
 package extensionsv1beta1
 
 import (
-	extensionsapiv1beta1 "k8s.io/api/extensions/v1beta1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
+	extensionsapiv1beta1 "github.com/spotmaxtech/k8s-api-v02217/extensions/v1beta1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 )
 
 // GroupName is the group name use in this package

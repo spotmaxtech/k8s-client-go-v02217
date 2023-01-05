@@ -21,9 +21,9 @@ limitations under the License.
 package autoscalingv1
 
 import (
-	v1 "k8s.io/api/autoscaling/v1"
-	conversion "k8s.io/apimachinery/pkg/conversion"
-	runtime "k8s.io/apimachinery/pkg/runtime"
+	v1 "github.com/spotmaxtech/k8s-api-v02217/autoscaling/v1"
+	conversion "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/conversion"
+	runtime "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
 	scheme "github.com/spotmaxtech/k8s-client-go-v02217/scale/scheme"
 )
 

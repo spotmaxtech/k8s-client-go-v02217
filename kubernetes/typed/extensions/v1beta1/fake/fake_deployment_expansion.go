@@ -19,9 +19,9 @@ package fake
 import (
 	"context"
 
+	"github.com/spotmaxtech/k8s-api-v02217/extensions/v1beta1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
 	core "github.com/spotmaxtech/k8s-client-go-v02217/testing"
-	"k8s.io/api/extensions/v1beta1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 func (c *FakeDeployments) Rollback(ctx context.Context, deploymentRollback *v1beta1.DeploymentRollback, opts metav1.CreateOptions) error {

@@ -17,8 +17,8 @@ limitations under the License.
 package restmapper
 
 import (
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 	"github.com/spotmaxtech/k8s-client-go-v02217/discovery"
-	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
 // CategoryExpander maps category strings to GroupResources.

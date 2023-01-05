@@ -27,12 +27,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/net"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/yaml"
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/jsonpath"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
-	"k8s.io/apimachinery/pkg/util/net"
-	"k8s.io/apimachinery/pkg/util/yaml"
 	"k8s.io/klog/v2"
 )
 

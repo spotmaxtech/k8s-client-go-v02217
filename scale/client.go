@@ -20,14 +20,14 @@ import (
 	"context"
 	"fmt"
 
+	autoscaling "github.com/spotmaxtech/k8s-api-v02217/autoscaling/v1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	serializer "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/serializer"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
 	"github.com/spotmaxtech/k8s-client-go-v02217/dynamic"
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
-	autoscaling "k8s.io/api/autoscaling/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
-	"k8s.io/apimachinery/pkg/types"
 )
 
 var scaleConverter = NewScaleConverter()

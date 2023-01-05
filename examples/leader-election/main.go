@@ -25,7 +25,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
 	clientset "github.com/spotmaxtech/k8s-client-go-v02217/kubernetes"
 	"github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd"

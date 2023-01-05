@@ -23,15 +23,15 @@ import (
 
 	"k8s.io/klog/v2"
 
+	v1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	meta_v1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/fields"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/wait"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd"
 	"github.com/spotmaxtech/k8s-client-go-v02217/util/workqueue"
-	v1 "k8s.io/api/core/v1"
-	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/fields"
-	"k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/apimachinery/pkg/util/wait"
 )
 
 // Controller demonstrates how to implement a controller with client-go.

@@ -18,10 +18,10 @@ package dynamiclister
 
 import (
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
-	"k8s.io/apimachinery/pkg/api/errors"
-	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
-	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/apimachinery/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1/unstructured"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/labels"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
 )
 
 var _ Lister = &dynamicLister{}

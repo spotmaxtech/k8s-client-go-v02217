@@ -25,9 +25,9 @@ import (
 
 	"github.com/imdario/mergo"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	clientcmdapi "github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd/api"
-	"k8s.io/apimachinery/pkg/runtime"
 )
 
 func TestMergoSemantics(t *testing.T) {

@@ -19,9 +19,9 @@ limitations under the License.
 package v1
 
 import (
-	v1 "k8s.io/api/admissionregistration/v1"
-	"k8s.io/apimachinery/pkg/api/errors"
-	"k8s.io/apimachinery/pkg/labels"
+	v1 "github.com/spotmaxtech/k8s-api-v02217/admissionregistration/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/api/errors"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/labels"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
 )
 

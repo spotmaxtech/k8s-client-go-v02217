@@ -30,7 +30,7 @@ import (
 
 	restclient "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 	"golang.org/x/oauth2"
-	"k8s.io/apimachinery/pkg/util/net"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/net"
 	"k8s.io/klog/v2"
 )
 

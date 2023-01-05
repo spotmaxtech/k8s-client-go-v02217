@@ -20,8 +20,8 @@ import (
 	"context"
 	"fmt"
 
-	"k8s.io/api/events/v1beta1"
-	"k8s.io/apimachinery/pkg/types"
+	"github.com/spotmaxtech/k8s-api-v02217/events/v1beta1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
 )
 
 // The EventExpansion interface allows manually adding extra methods to the EventInterface.
@@ -82,7 +82,8 @@ func (e *events) UpdateWithEventNamespace(event *v1beta1.Event) (*v1beta1.Event,
 // It returns the copy of the event that the server returns, or an error.
 // The namespace and name of the target event is deduced from the event.
 // The namespace must either match this event client's namespace, or this event client must
-//  have been created with the "" namespace.
+//
+//	have been created with the "" namespace.
 func (e *events) PatchWithEventNamespace(event *v1beta1.Event, data []byte) (*v1beta1.Event, error) {
 	if e.ns != "" && event.Namespace != e.ns {
 		return nil, fmt.Errorf("can't patch an event with namespace '%v' in namespace '%v'", event.Namespace, e.ns)

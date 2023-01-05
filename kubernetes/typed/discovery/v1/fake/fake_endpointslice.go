@@ -23,12 +23,12 @@ import (
 	json "encoding/json"
 	"fmt"
 
-	discoveryv1 "k8s.io/api/discovery/v1"
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	labels "k8s.io/apimachinery/pkg/labels"
-	schema "k8s.io/apimachinery/pkg/runtime/schema"
-	types "k8s.io/apimachinery/pkg/types"
-	watch "k8s.io/apimachinery/pkg/watch"
+	discoveryv1 "github.com/spotmaxtech/k8s-api-v02217/discovery/v1"
+	v1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	labels "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/labels"
+	schema "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	types "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
+	watch "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/watch"
 	applyconfigurationsdiscoveryv1 "github.com/spotmaxtech/k8s-client-go-v02217/applyconfigurations/discovery/v1"
 	testing "github.com/spotmaxtech/k8s-client-go-v02217/testing"
 )

@@ -19,8 +19,8 @@ limitations under the License.
 package v1beta1
 
 import (
-	v1 "k8s.io/api/core/v1"
-	v1beta1 "k8s.io/api/policy/v1beta1"
+	v1 "github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	v1beta1 "github.com/spotmaxtech/k8s-api-v02217/policy/v1beta1"
 )
 
 // PodSecurityPolicySpecApplyConfiguration represents an declarative configuration of the PodSecurityPolicySpec type for use

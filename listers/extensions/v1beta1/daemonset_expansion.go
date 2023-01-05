@@ -19,11 +19,11 @@ package v1beta1
 import (
 	"fmt"
 
-	apps "k8s.io/api/apps/v1beta1"
-	"k8s.io/api/core/v1"
-	"k8s.io/api/extensions/v1beta1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/labels"
+	apps "github.com/spotmaxtech/k8s-api-v02217/apps/v1beta1"
+	"github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	"github.com/spotmaxtech/k8s-api-v02217/extensions/v1beta1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/labels"
 )
 
 // DaemonSetListerExpansion allows custom methods to be added to

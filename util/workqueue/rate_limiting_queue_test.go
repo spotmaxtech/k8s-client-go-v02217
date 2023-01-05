@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/clock"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
 )
 
 func TestRateLimitingQueue(t *testing.T) {

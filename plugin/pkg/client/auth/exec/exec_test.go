@@ -37,12 +37,12 @@ import (
 	"testing"
 	"time"
 
+	v1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd/api"
 	"github.com/spotmaxtech/k8s-client-go-v02217/transport"
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/clock"
 )
 
 var (

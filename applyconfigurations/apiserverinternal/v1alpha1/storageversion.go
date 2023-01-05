@@ -19,10 +19,10 @@ limitations under the License.
 package v1alpha1
 
 import (
-	v1alpha1 "k8s.io/api/apiserverinternal/v1alpha1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	types "k8s.io/apimachinery/pkg/types"
-	managedfields "k8s.io/apimachinery/pkg/util/managedfields"
+	v1alpha1 "github.com/spotmaxtech/k8s-api-v02217/apiserverinternal/v1alpha1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	types "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/types"
+	managedfields "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/managedfields"
 	internal "github.com/spotmaxtech/k8s-client-go-v02217/applyconfigurations/internal"
 	v1 "github.com/spotmaxtech/k8s-client-go-v02217/applyconfigurations/meta/v1"
 )

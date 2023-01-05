@@ -24,8 +24,8 @@ import (
 
 	"net/http"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/clock"
 	rl "github.com/spotmaxtech/k8s-client-go-v02217/tools/leaderelection/resourcelock"
-	"k8s.io/apimachinery/pkg/util/clock"
 )
 
 type fakeLock struct {

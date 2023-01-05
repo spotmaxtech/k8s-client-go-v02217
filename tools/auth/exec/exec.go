@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/schema"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime/serializer"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication/install"
 	"github.com/spotmaxtech/k8s-client-go-v02217/rest"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer"
 )
 
 const execInfoEnv = "KUBERNETES_EXEC_INFO"

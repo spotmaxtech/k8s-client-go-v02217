@@ -19,8 +19,8 @@ limitations under the License.
 package install
 
 import (
-	"k8s.io/apimachinery/pkg/runtime"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	utilruntime "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/runtime"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication/v1"
 	"github.com/spotmaxtech/k8s-client-go-v02217/pkg/apis/clientauthentication/v1alpha1"

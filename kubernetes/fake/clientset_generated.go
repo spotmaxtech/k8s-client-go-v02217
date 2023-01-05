@@ -19,8 +19,8 @@ limitations under the License.
 package fake
 
 import (
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/watch"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/watch"
 	"github.com/spotmaxtech/k8s-client-go-v02217/discovery"
 	fakediscovery "github.com/spotmaxtech/k8s-client-go-v02217/discovery/fake"
 	clientset "github.com/spotmaxtech/k8s-client-go-v02217/kubernetes"

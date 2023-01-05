@@ -19,7 +19,7 @@ limitations under the License.
 package v1alpha1
 
 import (
-	v1alpha1 "k8s.io/api/rbac/v1alpha1"
+	v1alpha1 "github.com/spotmaxtech/k8s-api-v02217/rbac/v1alpha1"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
 	rest "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 )

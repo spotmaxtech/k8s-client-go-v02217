@@ -23,8 +23,8 @@ package v1
 import (
 	unsafe "unsafe"
 
-	conversion "k8s.io/apimachinery/pkg/conversion"
-	runtime "k8s.io/apimachinery/pkg/runtime"
+	conversion "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/conversion"
+	runtime "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/runtime"
 	api "github.com/spotmaxtech/k8s-client-go-v02217/tools/clientcmd/api"
 )
 

@@ -19,12 +19,12 @@ package v1beta1
 import (
 	"testing"
 
+	"github.com/spotmaxtech/k8s-api-v02217/core/v1"
+	extensions "github.com/spotmaxtech/k8s-api-v02217/extensions/v1beta1"
+	metav1 "github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/apis/meta/v1"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/labels"
+	"github.com/spotmaxtech/k8s-apimachinery-v02217/pkg/util/sets"
 	"github.com/spotmaxtech/k8s-client-go-v02217/tools/cache"
-	"k8s.io/api/core/v1"
-	extensions "k8s.io/api/extensions/v1beta1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/apimachinery/pkg/util/sets"
 )
 
 func TestDaemonSetLister(t *testing.T) {

@@ -19,7 +19,7 @@ limitations under the License.
 package v1beta1
 
 import (
-	v1beta1 "k8s.io/api/scheduling/v1beta1"
+	v1beta1 "github.com/spotmaxtech/k8s-api-v02217/scheduling/v1beta1"
 	"github.com/spotmaxtech/k8s-client-go-v02217/kubernetes/scheme"
 	rest "github.com/spotmaxtech/k8s-client-go-v02217/rest"
 )
